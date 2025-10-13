@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ravi Sharma | Cyber Security Professional</title>
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+		  rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="output.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="description"
+		  content="Ravi Sharma - Cyber Security Professional with a strong foundation in full-stack engineering. MSc Cyber Security Management.">
+	<meta name="keywords"
+		  content="Ravi Sharma, Cyber Security, Full-Stack Engineer, MSc Cyber Security Management, Incident Response, Digital Forensics, Network Security, Cryptography, GRC, DevSecOps, Python, Rust, C">
+	<meta name="author" content="Ravi Sharma">
+	<meta property="og:title" content="Ravi Sharma | Cyber Security Professional">
+	<meta property="og:description"
+		  content="Ravi Sharma - Cyber Security Professional with a strong foundation in full-stack engineering. MSc Cyber Security Management.">
+	<meta property="og:image" content="https://greywolf1499.github.io/favicon.png">
+	<meta property="og:url" content="https://greywolf1499.github.io/">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Ravi Sharma | Cyber Security Professional">
+	<meta name="twitter:description"
+		  content="Ravi Sharma - Cyber Security Professional with a strong foundation in full-stack engineering. MSc Cyber Security Management.">
+	<meta name="twitter:image" content="https://greywolf1499.github.io/favicon.png">
+</head>
+
+<body class="grid-bg">
+
+	<!-- Header -->
+	<header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+		<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+			<a href="#" class="text-2xl font-bold tracking-tighter text-white">R//S</a>
+			<nav class="hidden md:flex space-x-8 items-center">
+				<a href="#about" class="text-slate-300 hover:text-green-400 transition-colors">About</a>
+				<a href="#projects" class="text-slate-300 hover:text-green-400 transition-colors">Projects</a>
+				<a href="#skills" class="text-slate-300 hover:text-green-400 transition-colors">Skills</a>
+				<a href="#contact"
+				   class="bg-green-500 text-slate-900 font-bold py-2 px-4 rounded-lg hover:bg-green-400 transition-colors">Contact
+					Me</a>
+			</nav>
+			<button id="mobile-menu-button" class="md:hidden text-white">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						  d="M4 6h16M4 12h16m-7 6h7"></path>
+				</svg>
+			</button>
+		</div>
+		<!-- Mobile Menu -->
+		<div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+			<a href="#about" class="block py-2 text-slate-300 hover:text-green-400">About</a>
+			<a href="#projects" class="block py-2 text-slate-300 hover:text-green-400">Projects</a>
+			<a href="#skills" class="block py-2 text-slate-300 hover:text-green-400">Skills</a>
+			<a href="#contact"
+			   class="block mt-2 bg-green-500 text-slate-900 font-bold py-2 px-4 rounded-lg hover:bg-green-400">Contact
+				Me</a>
+		</div>
+	</header>
+
+	<main class="container mx-auto px-6 pt-24">
+
+		<!-- Hero Section -->
+		<section id="home" class="py-20 md:py-32">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div>
+					<h1 class="text-4xl md:text-6xl font-black tracking-tighter text-white leading-tight">
+						A Developer's Mindset, <span class="text-green-400">A Security Specialist's
+							Focus.</span>
+					</h1>
+					<p class="mt-6 text-slate-400 max-w-xl text-lg">
+						I'm a Cyber Security professional with a strong foundation in full-stack engineering.
+						After two years of building robust applications, I have dedicated my career to
+						security, leveraging my developer background to protect systems from the inside out.
+					</p>
+					<div class="mt-8 flex gap-4">
+						<a href="#contact"
+						   class="bg-green-500 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-green-400 transition-colors">Get
+							In Touch</a>
+						<a id="cv-download-link"
+						   href="https://drive.google.com/file/d/1o1z9S9o-h2yoAai3XGy-wL2i6z4PAeKw/view?usp=sharing"
+						   target="_blank"
+						   class="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-600 transition-colors flex items-center gap-2">
+							<i data-lucide="download-cloud"></i>
+							Download CV
+						</a>
+					</div>
+				</div>
+				<div class="w-full max-w-md mx-auto">
+					<div class="glass-effect rounded-xl shadow-2xl shadow-green-500/10 overflow-hidden">
+						<div class="terminal-header p-3 flex items-center gap-2">
+							<div class="w-3 h-3 bg-red-500 rounded-full"></div>
+							<div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+							<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+						</div>
+						<div id="terminal" class="terminal-body p-4 font-mono text-sm">
+							<div id="terminal-content"></div>
+							<div class="prompt cursor"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="py-20 md:py-32">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+				<p class="text-slate-400 mt-2">My journey, my philosophy, and what drives me.</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="glass-effect p-6 rounded-lg">
+					<div class="flex items-center gap-4">
+						<div class="bg-green-500/10 p-3 rounded-full"><i data-lucide="compass"
+							   class="text-green-400"></i></div>
+						<h3 class="text-xl font-bold text-white">Security First</h3>
+					</div>
+					<p class="mt-4 text-slate-400">My study and practice of cybersecurity have reinforced a
+						core belief: security cannot be an afterthought. It must be a foundational part of any
+						process, influencing everything from architecture to implementation.</p>
+				</div>
+				<div class="glass-effect p-6 rounded-lg">
+					<div class="flex items-center gap-4">
+						<div class="bg-green-500/10 p-3 rounded-full"><i data-lucide="cpu"
+							   class="text-green-400"></i></div>
+						<h3 class="text-xl font-bold text-white">The Tinkerer's Mindset</h3>
+					</div>
+					<p class="mt-4 text-slate-400">From my family's first PC to building a keylogger in C on
+						Arch Linux, my self-taught, problem-solving drive is the foundation of my technical
+						approach. I need to know *why* things work, not just *how*.</p>
+				</div>
+				<div class="glass-effect p-6 rounded-lg">
+					<div class="flex items-center gap-4">
+						<div class="bg-green-500/10 p-3 rounded-full"><i data-lucide="shield-check"
+							   class="text-green-400"></i></div>
+						<h3 class="text-xl font-bold text-white">Deliberate Transition</h3>
+					</div>
+					<p class="mt-4 text-slate-400">My software engineering experience showed me that security
+						is often overlooked. This inspired my dedicated transition into cybersecurity. My MSc
+						was a strategic career pivot to specialize in protecting systems, not just building
+						them.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="py-20 md:py-32">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+				<p class="text-slate-400 mt-2">A selection of projects demonstrating my capabilities.</p>
+			</div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<!-- Project 1 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">PQC on MLS Dissertation</h3>
+						<p class="mt-2 text-slate-400">Quantified the performance impact of Post-Quantum
+							Cryptography on the MLS protocol, producing novel empirical data using Rust,
+							Python, and advanced cryptographic analysis.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Cryptography</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Rust</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Benchmarking</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 2 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Digital Forensics Investigation</h3>
+						<p class="mt-2 text-slate-400">Acted as an expert witness in a simulated police
+							investigation, analyzing disk images (FTK), recovering deleted data (Autopsy), and
+							tracking a suspect's movements via GPS metadata.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Digital
+								Forensics</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Autopsy</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Evidence
+								Handling</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 3 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Secure Network Design</h3>
+						<p class="mt-2 text-slate-400">Designed and built a secure, hierarchical corporate
+							network from scratch (Cisco Packet Tracer), implementing VLANs, a Zone-Policy
+							Firewall, and an IPSec VPN.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Network
+								Security</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Cisco</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">IPSec</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Firewall</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 4 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Incident Response</h3>
+						<p class="mt-2 text-slate-400">Managed response for a simulated double-extortion
+							ransomware attack. Reconstructed the attack chain, performed root cause analysis,
+							and developed strategic recommendations.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">IR
+								Lifecycle</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Ransomware</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Threat
+								Intelligence</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 5 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Customer Self-Service Portal</h3>
+						<p class="mt-2 text-slate-400">Designed and implemented a novel, fine-grained RBAC
+							system from scratch. This reusable authentication module cut development time for
+							other teams by an estimated 40%.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">React</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">GCP</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Security
+								Architecture</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">RBAC</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 6 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">GreyWolf Keylogger</h3>
+						<p class="mt-2 text-slate-400">Developed a sophisticated keylogger in C for Linux,
+							interfacing directly with kernel input events and exfiltrating data over TCP
+							sockets, exploring low-level system programming.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">C
+								Programming</span>
+							<span class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Linux
+								Internals</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Offensive
+								Security</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 7 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Homelab & Self-Hosting</h3>
+						<p class="mt-2 text-slate-400">Deployed and manage a secure, containerized media
+							automation stack on Arch Linux, accessible remotely via a Tailscale VPN. A
+							practical showcase of containerization and secure networking.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Docker</span>
+							<span class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Linux
+								(Arch)</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Tailscale</span>
+						</div>
+					</div>
+				</div>
+				<!-- Project 8 -->
+				<div class="project-card glass-effect rounded-lg overflow-hidden flex flex-col">
+					<div class="p-6 flex-grow">
+						<h3 class="text-xl font-bold text-green-400">Serverless AI Data Pipeline</h3>
+						<p class="mt-2 text-slate-400">Architected an event-driven, serverless pipeline on GCP
+							to automate transcription and summarization of patient conversations, reducing
+							manual effort by over 95%.</p>
+					</div>
+					<div class="p-6 border-t border-slate-700">
+						<div class="flex flex-wrap gap-2">
+							<span class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">GCP
+								Cloud Functions</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Python</span>
+							<span
+								  class="skill-tag bg-slate-700 text-xs font-semibold px-2 py-1 rounded">Serverless</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="py-20 md:py-32">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-white">Technical Toolkit</h2>
+				<p class="text-slate-400 mt-2">A selection of my technical capabilities.</p>
+			</div>
+			<div class="max-w-5xl mx-auto">
+				<div class="mb-8">
+					<h3 class="text-lg font-semibold text-green-400 mb-4 text-center">Cyber Security</h3>
+					<div class="flex flex-wrap gap-3 justify-center">
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Incident Response</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Digital Forensics
+							(Autopsy, FTK)</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Network Security (ZPF,
+							IPSec)</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Cryptography (PQC,
+							TLS)</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Risk, Audit &
+							Compliance</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">NIST & ISO
+							Frameworks</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Vulnerability
+							Assessment</span>
+						<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">OWASP Top 10</span>
+					</div>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8 mt-12">
+					<div>
+						<h3 class="text-lg font-semibold text-green-400 mb-4 text-center">Development</h3>
+						<div class="flex flex-wrap gap-3 justify-center">
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">React</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Angular</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Node.js</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Python</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Rust</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">C</span>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold text-green-400 mb-4 text-center">Cloud & DevOps</h3>
+						<div class="flex flex-wrap gap-3 justify-center">
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">GCP</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Docker</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Serverless</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Linux (Arch)</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Tailscale</span>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold text-green-400 mb-4 text-center">Soft Skills</h3>
+						<div class="flex flex-wrap gap-3 justify-center">
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Leadership</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Adaptability</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Problem-Solving</span>
+							<span class="skill-tag bg-slate-800 px-4 py-2 rounded-full">Resilience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Contact Section -->
+		<section id="contact" class="py-20 md:py-32">
+			<div class="text-center max-w-2xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-white">Seeking a Role in Cyber Security</h2>
+				<p class="text-slate-400 mt-4 text-lg">I am actively seeking full-time roles in cybersecurity
+					where I can leverage my unique background in software engineering. If you're looking for a
+					passionate and technically-grounded security professional, I'd love to connect.</p>
+
+				<!-- Secure Contact Form -->
+				<form action="https://formspree.io/f/mzzjkvoz" method="POST" class="mt-8 text-left">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<div>
+							<label for="name" class="block text-sm font-medium text-slate-400 mb-2">Your
+								Name</label>
+							<input type="text" name="name" id="name" required
+								   class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-white focus:ring-green-500 focus:border-green-500 transition">
+						</div>
+						<div>
+							<label for="email" class="block text-sm font-medium text-slate-400 mb-2">Your
+								Email</label>
+							<input type="email" name="email" id="email" required
+								   class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-white focus:ring-green-500 focus:border-green-500 transition">
+						</div>
+					</div>
+					<div class="mt-6">
+						<label for="message"
+							   class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+						<textarea name="message" id="message" rows="4" required
+								  class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-white focus:ring-green-500 focus:border-green-500 transition"></textarea>
+					</div>
+					<div class="mt-6 text-center">
+						<button type="submit"
+								class="bg-green-500 text-slate-900 font-bold text-lg py-3 px-8 rounded-lg hover:bg-green-400 transition-colors">
+							Send Message
+						</button>
+					</div>
+				</form>
+
+				<div class="mt-10 flex justify-center gap-8">
+					<a href="https://www.linkedin.com/in/ravi-sharma-hla/" target="_blank"
+					   class="text-slate-400 hover:text-green-400 transition-colors"
+					   aria-label="LinkedIn Profile">
+						<i data-lucide="linkedin" class="w-8 h-8"></i>
+					</a>
+					<a href="https://github.com/greywolf1499" target="_blank"
+					   class="text-slate-400 hover:text-green-400 transition-colors"
+					   aria-label="GitHub Profile">
+						<i data-lucide="github" class="w-8 h-8"></i>
+					</a>
+					<a href="https://tryhackme.com/p/greywolf1499" target="_blank"
+					   class="text-slate-400 hover:text-green-400 transition-colors"
+					   aria-label="TryHackMe Profile">
+						<i data-lucide="shield" class="w-8 h-8"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="border-t border-slate-800">
+		<div class="container mx-auto px-6 py-6 text-center text-slate-500">
+			<p>&copy; 2025 Ravi Sharma. Designed and built with a security-first mindset.</p>
+		</div>
+	</footer>
+
+
+	<script>
+		lucide.createIcons();
+
+		// Mobile Menu Toggle
+		const mobileMenuButton = document.getElementById('mobile-menu-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+		mobileMenuButton.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+		});
+
+		// --- DYNAMIC CV LINK ---
+		document.addEventListener('DOMContentLoaded', () => {
+			const cvLink = document.getElementById('cv-download-link');
+			const internationalCvUrl = 'https://drive.google.com/file/d/1o1z9S9o-h2yoAai3XGy-wL2i6z4PAeKw/view?usp=sharing';
+			const indiaCvUrl = 'https://drive.google.com/file/d/1rxRzFYabe4jeqg2nw4psYeb9JtzYhpyN/view?usp=sharing';
+
+			// Set a default link immediately in case the API fails
+			cvLink.href = internationalCvUrl;
+
+			const setCvLinkForLocation = async () => {
+				try {
+					// This free API determines country from the visitor's IP address
+					const response = await fetch('http://ip-api.com/json/');
+					if (!response.ok) {
+						throw new Error('GeoIP API response was not ok.');
+					}
+					const data = await response.json();
+
+					// If the country code is 'IN', use the India-specific CV link
+					if (data && data.countryCode === 'IN') {
+						cvLink.href = indiaCvUrl;
+					}
+				} catch (error) {
+					console.error('Failed to fetch user location, defaulting to international CV link.', error);
+					// The link is already set to the international default, so no action needed.
+				}
+			};
+
+			setCvLinkForLocation();
+		});
+
+
+		// Terminal animation
+		const terminalContent = document.getElementById('terminal-content');
+		const commands = [
+			{ text: './fetch-profile.sh', delay: 100 },
+			{ text: 'Fetching professional summary...', output: true, delay: 1500 },
+			{ text: '> Cyber Security Professional...', output: true, delay: 500 },
+			{ text: '> Strong foundation in full-stack eng...', output: true, delay: 500 },
+			{ text: '> MSc Cyber Security Management...', output: true, delay: 500 },
+			{ text: 'Done.', output: true, delay: 1000 },
+			{ text: 'run --command="list-key-skills"', delay: 100 },
+			{ text: 'Running command...', output: true, delay: 1000 },
+			{ text: '[ Forensics ] [ NetSec ] [ Crypto ] [ GRC ] [ DevSecOps ] [ Python ] [ Rust ] [ C ]', output: true, delay: 1000 },
+			{ text: 'run --command="show-ambition"', delay: 100 },
+			{ text: 'Executing...', output: true, delay: 1000 },
+			{ text: 'Ambition: To apply my deep technical knowledge in a dedicated Cyber Security role, focusing on defensive and offensive security.', output: true, delay: 2000 },
+			{ text: 'System ready.', output: true, delay: 500 }
+		];
+
+		let commandIndex = 0;
+		let charIndex = 0;
+
+		function type() {
+			if (commandIndex >= commands.length) {
+				return;
+			}
+
+			const currentCommand = commands[commandIndex];
+
+			if (currentCommand.output) {
+				const p = document.createElement('p');
+				p.textContent = currentCommand.text;
+				if (currentCommand.text.startsWith('>')) {
+					p.classList.add('pl-4', 'text-slate-400');
+				} else if (currentCommand.text.startsWith('[')) {
+					p.classList.add('text-amber-300');
+				}
+				else {
+					p.classList.add('text-slate-300');
+				}
+				terminalContent.appendChild(p);
+				commandIndex++;
+				setTimeout(type, currentCommand.delay);
+			} else {
+				const prompt = document.createElement('p');
+				prompt.classList.add('prompt');
+				terminalContent.appendChild(prompt);
+				typeCharacter(prompt);
+			}
+		}
+
+		function typeCharacter(promptElement) {
+			if (charIndex < commands[commandIndex].text.length) {
+				promptElement.textContent = `ravi@secure-dev:~$ ${commands[commandIndex].text.substring(0, charIndex + 1)}`;
+				charIndex++;
+				setTimeout(() => typeCharacter(promptElement), 50);
+			} else {
+				charIndex = 0;
+				commandIndex++;
+				setTimeout(type, commands[commandIndex - 1].delay);
+			}
+		}
+
+		setTimeout(type, 500);
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #0a0a0a;
+	color: #e2e8f0;
+}
+
+.glass-effect {
+	background: rgba(15, 23, 42, 0.3);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-header {
+	background: #1e293b;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-body {
+	height: 400px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #475569 #1e293b;
+}
+
+.terminal-body::-webkit-scrollbar {
+	width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+	background: #1e293b;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+	background-color: #475569;
+	border-radius: 4px;
+}
+
+.prompt::before {
+	content: "ravi@secure-dev:~$ ";
+	color: #34d399;
+}
+
+.cursor::after {
+	content: "▋";
+	animation: blink 1s step-end infinite;
+	color: #fbbf24;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.grid-bg {
+	background-image: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.05) 1px,
+			transparent 1px
+		),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+	background-size: 40px 40px;
+}
+
+.project-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 15px -3px rgba(52, 211, 153, 0.1),
+		0 4px 6px -2px rgba(52, 211, 153, 0.05);
+}
+
+.skill-tag {
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-tag:hover {
+	background-color: #34d399;
+	color: #0a0a0a;
+	transform: scale(1.05);
+}
